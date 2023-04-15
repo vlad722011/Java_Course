@@ -112,7 +112,7 @@ public class Home_Work_1 {
             System.out.printf("Доброе утро, %s!%n", str);
         } else if (hours >= 12 && hours < 18) {
             System.out.printf("Добрый день, %s!%n", str);
-        } else if (hours >= 18 && hours < 22) {
+        } else if (hours >= 18 && hours < 23) {
             System.out.printf("Добрый вечер, %s!%n", str);
         } else
             System.out.printf("Доброй ночи, %s!%n", str);
