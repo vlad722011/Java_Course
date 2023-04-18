@@ -15,15 +15,9 @@ public class Seminar_2 {
         System.out.println("Задача 2. Решение преподавателя.");
         String longString = "aaaabbbcdd";
         ex2_2(longString);
-
+        System.out.println("Задача 3. Моё решение.");
         String string = "А роза упала на лапу Азора";
         System.out.println(ex3(string));
-        ex4();
-        System.out.println("Задача 1");
-        ex1();
-        System.out.println("Задача 3. Моё решение.");
-        String in = "А роза упала на лапу Азора";
-        System.out.println(ex3(in));
         System.out.println("Задача 3. Решение группы.");
         String input = "А роза упала на лапу Азора";
         System.out.println(ex3(input));
@@ -32,15 +26,11 @@ public class Seminar_2 {
         System.out.println("Задача 5. Решение преподавателя.");
         String pathDir = "/home/vlad/IdeaProjects/Java_Course_GB/.idea";
         ex5(pathDir);
-
-
     }
-
     // Задача 1. Решение моё.
     // Дано число N (>0) и символы 'A' и 'B'. 
     // Написать метод, который вернет строку длины N, которая состоит из чередующихся
     // символов 'A' и 'B', начиная с 'A'.
-
     private static void ex1() {
         int number = 7;
         int count = 0;
@@ -77,8 +67,7 @@ public class Seminar_2 {
         }
         System.out.println(sb);
     }
-
-
+    
     // Задача 2. Моё решение.
     // Напишите метод, который сжимает строку.
     // Пример: вход aaaabbbcdd.
@@ -111,14 +100,10 @@ public class Seminar_2 {
     // Если символ во входящей строке повторяется один раз подряд,
     // то количество этого символа в результирующей строке не указывается (только сам символ).
     // В примере выше это символ 'c'.
-
     public static void ex2_1(String input) {
-
         input += " ";
-
         char[] array = input.toCharArray();
         StringBuilder result = new StringBuilder();
-
         int count = 1;
         for (int i = 0; i < array.length - 1; i++) {
             char check = array[i];
@@ -141,7 +126,6 @@ public class Seminar_2 {
         char prev = longString.charAt(0);
         char curr = prev;
         int counter = 1;
-
         for (int i = 1; i < longString.length(); i++) {
             prev = longString.charAt(i - 1);
             curr = longString.charAt(i);
@@ -157,9 +141,8 @@ public class Seminar_2 {
 
         System.out.printf("%s -> %s%n", longString, shortStringSB);
     }
-
-
-    // Задача 3
+    
+    // Задача 3. Моё решение.
     // Напишите метод, который принимает на вход строку (String) и определяет является
     // ли строка палиндромом (возвращает boolean значение).
     private static boolean ex3(String str) {
@@ -183,7 +166,6 @@ public class Seminar_2 {
     // Задача 3. Решение группы.
     // Напишите метод, который принимает на вход строку (String) и определяет
     // является ли строка палиндромом (возвращает boolean значение).
-
     public static boolean ex3_1(String inputStr) {
         inputStr = inputStr.toLowerCase()
                 .replace(" ", "")
@@ -214,7 +196,6 @@ public class Seminar_2 {
     // Напишите метод, который вернет содержимое текущей папки в виде массива строк.
     // Напишите метод, который запишет массив, возвращенный предыдущим методом в файл.
     // Обработайте ошибки с помощью try-catch конструкции.
-
     private static void ex5(String pathDir) {
         File file = new File(pathDir);
         if (!(file.exists() || file.isDirectory())) {
