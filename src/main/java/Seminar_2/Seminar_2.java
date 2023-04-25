@@ -67,7 +67,7 @@ public class Seminar_2 {
         }
         System.out.println(sb);
     }
-    
+
     // Задача 2. Моё решение.
     // Напишите метод, который сжимает строку.
     // Пример: вход aaaabbbcdd.
@@ -141,7 +141,7 @@ public class Seminar_2 {
 
         System.out.printf("%s -> %s%n", longString, shortStringSB);
     }
-    
+
     // Задача 3. Моё решение.
     // Напишите метод, который принимает на вход строку (String) и определяет является
     // ли строка палиндромом (возвращает boolean значение).
