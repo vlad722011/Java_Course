@@ -51,6 +51,7 @@ public class Seminar_3 {
             counts.add(indexPlanet);
         }
         counts.add(list.size());
+        System.out.println(counts.toString());
         for (int i = counts.size()-1; i >= 0; i--) {
             if(counts.get(i) < 0){
                 int num = counts.get(i );
